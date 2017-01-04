@@ -1,0 +1,330 @@
+/* final project - GLOBAL STYLES  */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/* html element is being used as background color for this layout (outside the wrapper when visible) */
+html {
+	background: #5573a9;
+}
+/* body is being used as the wrapper of all content for this layout */
+body {
+	background: #fff;
+	font-family: "clarendon-urw",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: 1px;
+}
+header {
+	background: #003399;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+div.content {
+    padding: 20px;
+}
+
+section {
+    padding: 1em;
+}
+
+/* START NAV rules */
+
+nav.main {+
+	margin: 20px 0;
+	z-index: 1000;
+    
+}
+nav.main li {
+	margin: 10px 5px 10px 0px;
+	list-style: none;
+	display: inline-block;
+}
+nav.main a {
+	padding: 4px 8px;
+	text-decoration: none;
+	color: #31a0ab;
+	line-height: 100%;
+}
+nav.main a:hover {
+	color: #94dedd;
+}
+nav.main li.current a {
+	background: #31a0ab;
+	color: #fff;
+	border-radius: 5px;
+}
+/* right nav */
+nav.main.right ul {
+	text-align: right;
+}
+/* center nav */
+nav.main.center ul {
+	text-align: center;
+    font-size: 1.2em;
+}
+/* END NAV rules */
+
+/* start reCAPTCHA styles */
+
+		/* writes to small text above reCAPTCHA upon failure */
+		.dateFeedback{
+			font-style:italic;
+			font-size:70%;
+			font-weight:bold;
+			color:#f00;
+		}
+        input:required {
+              border: 1px solid red;
+        }
+
+         input:optional, textarea:optional {
+             background-color:#f1f1f1;
+             border:1px solid #ccc;
+        }
+
+        input[type="submit"], input[type="button"] {
+          background-color: #fff;
+          border-radius: 4px;
+          border: solid 1px #ccc;
+          padding: 0.3em 0.5em;
+        }
+
+        fieldset {
+          border: 1px solid #ccc;
+          max-width: 350px;
+        }
+
+        legend {
+          margin-left: 0.5em;
+          padding: 0.2em 0.5em;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+
+        /* end reCAPTCHA styles */
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+h1 {
+	text-align: center;
+	font-variant: small-caps;
+}
+
+    h1 a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+h2.pageid {
+	padding: 20px 25px 25px 25px;
+}
+article {
+	text-align: justify;
+}
+div.embed-container {
+	position: relative;
+	padding-bottom: 80%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+div.embed-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	border-bottom: 1px solid #000;
+}
+aside {
+	font-family: "clarendon-urw",Georgia,Cambria,"Times New Roman",Times,serif;
+    padding: 1em;
+}
+aside img {
+	width: 100%;
+}
+p.author {
+	font-weight: bold;
+	text-align: right;
+}
+footer {
+	background-color: #009999;
+	font-family: "clarendon-urw",Georgia,Cambria,"Times New Roman",Times,serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	clear: both;
+    padding: 10px;
+}
+
+/* RESPONSIVE BREAK POINTS AND STYLES */
+
+	/* DESKTOP Layout and Sizing */
+@media all and (min-width:780px) {
+body {
+	background: #FFF;
+	width: 80%;
+	margin: auto;
+}
+header {
+	padding: 20px 10px 10px 10px; /* T R B L */
+}
+
+h2.pageid {
+	color: #fff;
+	position: relative;
+    font-size: 2em;
+    text-align: center;
+
+
+}
+h1 {
+	font-size: 4em;
+	font-variant: small-caps;
+	letter-spacing: .10em;
+	margin-right: 10px;
+}
+    img {
+        width: 80%;
+    }
+p {
+	margin-bottom: 1em;
+}
+article {
+	float: left;
+	width: 64%;
+	padding-left: 2.5%;
+}
+article h2 {
+	font-size: 1.7em;
+	margin-bottom: .20em;
+}
+article p {
+	font-size: 1.2em;
+}
+
+ul.services{
+    display: inline-block;
+}
+
+ul.features{
+    display: inline-block;
+}
+
+section {
+/*
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-ie-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	-ie-column-gap: 2em;
+*/
+	column-gap: 2em;
+	padding-bottom: 1em;
+}
+section:last-of-type {
+	border-bottom: none;
+}
+aside {
+	float: right;
+	width: 26%;
+	padding: 0px 2.5%; /* Top Right Bottom Left */
+	font-size: 1.2em;
+}
+aside h2 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+footer {
+	font-size: 1.2em;
+	letter-spacing: .20em;
+	padding: 25px 0 15px 0;
+}
+
+footer p small{
+    font-size: .5em;
+    }
+    
+    .iis-next-nav, .iis-previous-nav {
+        display: inline !important;
+    }
+
+}
+
+/* TABLET Layout and Sizing */
+@media all and (min-width:481px) and (max-width:779px) {
+body {
+	background-color: #fff;
+	width: 50%;
+    }
+} /* NOTE: Be sure to close this media query's declaration block correctly */
+
+/* PHONE Layout and Sizing */
+@media all and (max-width:480px) {
+    body {
+        background-color: #5573a9;
+        color: #fff;
+        font-family: Tahoma,Georgia,Cambria,"Times New Roman",Times,serif;
+        letter-spacing: 1px;
+    }
+    img {
+        width: 100%;
+    }
+} /* NOTE: Be sure to close this media query's declaration block correctly */
+
+/* Mobile Nav Layout */
+
+@media screen and (max-width: 800px) {
+nav.main {
+	position: relative;
+	min-height: 40px;
+}
+nav.main ul {
+	width: 180px;
+	padding: 5px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: solid 1px #aaa;
+	background: #fff url(../../../../seattlecentral1/web120/alice/css/images/icon-menu.png) no-repeat 10px 11px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+nav.main li {
+	display: none; /* hide all <li> items */
+	margin: 0;
+}
+nav.main li.current {
+	display: block; /* show only current <li> item */
+}
+nav.main a {
+	display: block;
+	padding: 5px 5px 5px 32px;
+	text-align: left;
+}
+nav.main li.current a {
+	background: none;
+	color: #666;
+}
+/* on nav hover */
+nav.main ul:hover {
+	background-image: none;
+}
+nav.main ul:hover li {
+	display: block;
+	margin: 0 0 5px;
+}
+nav.main ul:hover .current {
+	background: url(../../../../seattlecentral1/web120/alice/css/images/icon-check.png) no-repeat 10px 7px;
+}
+}
