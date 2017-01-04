@@ -11,8 +11,6 @@
 <div class="embed-container">
 -->
 
-<img src="images/fireplace.jpg" alt="fireplace" />
-
 <!--
 <iframe src="https://www.youtube.com/embed/GmZiqwRnwtM" frameborder="0" allowfullscreen></iframe>
 -->
@@ -35,7 +33,7 @@
   <section>
     <p>Grewal and Chahal are nurses and their new business will specialize in dementia and memory care, elder care, and those with developmental disabilities. They promise excellent care in a safe and loving environment complete with home-cooked meals.</p>
     </section>
-    
+
     </div>
 
     </article>
